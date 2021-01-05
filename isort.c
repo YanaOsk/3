@@ -10,7 +10,7 @@ for(int j =i;j> 0; j--){
 }
 void insertion_sort(int* arr, int length){
 int key,j;
-for(int i =0; i<51; i++){
+for(int i =0; i<len; i++){
 key=*(arr+i);
 j=i-1;
 while(j>=0 && *(arr+j) > key){
