@@ -2,16 +2,17 @@ CC = gcc
 FLAGS = -Wall -g
 all: isort txtfind
 
+
 isort: isort.o
-	gcc -Wall -fPIC -o isort isort.o
+	gcc -Wall -g -fPIC -o isort isort.o
 txtfind: txtfind.o
-	gcc -Wall -fPIC -o txtfind txtfind.o
+	gcc -Wall -g -fPIC  -o txtfind txtfind.o
 isort.o: isort.c mylib.h
-	gcc -Wall -fPIC -c isort.c
+	gcc -Wall -g -fPIC -c isort.c mylib.h
 txtfind.o: txtfind.c mylib.h
-	gcc -Wall -fPIC -c txtfind.c		
+	gcc -Wall -g -fPIC -c txtfind.c mylib.h		
 
 .PHONY: clean all 
 
 clean:
-	rm -f *.o run
+	rm -f *.o isort txtfind
