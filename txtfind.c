@@ -117,9 +117,16 @@ for(int i=0; firstline[i]!=' ';i++){
 }
 //printf("%s\n",answer);//Here now we have "cat"
 char choice2;
-for(int i=strlen(answer)+1; answer[i] !='\n';i++){
-    choice2=answer[i];
-}
+      int k=0;
+      while(firstline[k] != ' '){
+      k++;
+      }
+      if(firstline[k] ==' '){
+       choice2=firstline[k+1];     
+      }
+// for(int i=strlen(answer)+1; answer[i] !='\n';i++){
+//     choice2=answer[i];
+// }
 //printf("%c\n",choice);//Here we have now choice for switch case-or a or b
 switch(choice2)
     {
