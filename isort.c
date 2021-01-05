@@ -26,9 +26,16 @@ j--;
 int main(){
 ///////////////////FIRST PART////////////////////////
 int array[len];
-int *scr=array;
-int i=0;
-while((scanf("%d ",scr+i)!= EOF)&& (i<len))i++;
+int arrnumber=0;
+for(int i=0;i<len;i++){
+    if(scanf("%d",&arrnumber)!=1){
+        printf("Failed");
+    }
+    else
+    {
+        *(array+i)=arrnumber;
+    }
+}
 shift_element(array,1);
 for(int i=0; i<len; i++){
 printf("%d ,",array[i]);
