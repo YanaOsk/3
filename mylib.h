@@ -1,0 +1,10 @@
+void shift_element(int* arr,int i);
+void insertion_sort(int* arr, int length);
+void print_lines(char *str);
+int Substring(char * str1, char * str2);
+int similar(char *s,char *t,int n);
+char * getWordFromText(char arr[],char * temp );
+void cleanArray(char * str3);
+void print_similar_words(char * str);
+int getLine(char s[],char *p);
+int getWord(char w[],char *s);
